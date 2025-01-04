@@ -1,0 +1,126 @@
+@import "./utils/vars";
+
+.header {
+    background-color: $background_color;
+    height: 502px;
+
+    @media(min-width: 480px) {
+        height: 415px;
+    }
+
+    // min-width: 340px;
+    // max-width: 1200px;
+}
+
+.navigation {
+    display: none;
+
+    @media(min-width: 1200px) {
+        display: block;
+    }
+}
+
+.header_logo {
+    width: 37px;
+    // height: 35px;
+    color: $default_button_color;
+    margin-left: 15px;
+
+    @media(min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.hero {
+    margin: 20px 15px 0 15px;
+}
+
+.hero_title {
+    margin-top: 50px;
+    font-family: $support_font;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32.68px;
+    color: $alternative_text_color;
+}
+
+.hero_title span {
+    font-size: 34px;
+    line-height: 32.81px;
+}
+
+.hero_links {
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
+}
+
+.hero_links a {
+    margin-left: 20px;
+    text-decoration: underline;
+    color: $default_button_color;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+}
+
+.hero_links a:hover {
+    color: $hover_button_color;
+}
+
+.hero_button {
+    width: 108px;
+    height: 38px;
+    color: $primary_text_color;
+    background-color: transparent;
+    border: 2px solid $default_button_color;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14.63px;
+
+    &:hover {
+        border: 2px solid $hover_button_color;
+    }
+
+    &:focus {
+        border: 2px solid $hover_button_color;
+        color: $alternative_text_color;
+    }
+}
+
+.hero_icecream {
+    width: 177px;
+    height: 217px;
+    position: absolute;
+    top: 285px;
+    right: 60px;
+
+    @media(min-width: 480px) {
+        width: 218px;
+        height: 267px;
+        top: 148px;
+        right: 40px;
+    }
+}
+
+.hero_dots1 {
+    position: absolute;
+    right: 215px;
+    top: 467px;
+
+    @media(min-width: 480px) {
+        top: 380px;
+        right: 233px;
+    }
+}
+
+.hero_dots2 {
+    position: absolute;
+    right: 0px;
+    top: 453px;
+
+    @media(min-width: 480px) {
+        top: 366px;
+    }
+}

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ice cream</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,15 +20,66 @@
 	</head>
 
 	<body>
-		<header>
-			<nav class="navigation"></nav>
-			<div class="hero"></div>
+		<header class="header">
+
+				<nav class="mobile-navigation">
+					<img class="header_logo" src="./images/Logo.png">	
+					<button type="button" class="mobile-menu_button is-open" aria-expanded="false" data-menu-button>
+						<svg class="mobile-menu_icon" aria-label="mobile menu toggle">
+							<use href="./images/sprite.svg#icon-menu" class="open-icon"></use>
+							<use href="./images/sprite.svg#icon-close" class="close-icon"></use>
+						</svg>
+					</button>
+					
+
+
+					<div class="mobile-menu_container" data-menu>
+						<div class="fixed_container">
+							<ul class="mobile-menu_list">
+								<li class="mobile-menu_link">
+									<a href="./index.html">Home</a>
+								</li>
+								<li class="mobile-menu_link">
+									<a href="#about">How it's made?</a>
+								</li>
+								<li class="mobile-menu_link">
+									<a href="#products">Our products</a>
+								</li>
+								<li class="mobile-menu_link">
+									<a href="#contacts">Contact</a>
+								</li>
+							</ul>
+							<button type="button" class="buynow-button">Buy now ></button>
+						</div>
+
+				</nav>
+
+				<nav class="navigation">
+					<img class="header_logo" src="./images/Logo.png">
+				</nav>
+
+				<div class="hero">
+					<h1 class="hero_title">ICE CREAM 
+						<br>MADE WITH <br><span>PASSION</span></h1>
+
+						<div class="hero_links">
+							<button type="button" class="hero_button">Products</button>
+							<a href="#about">How it's made?</a>
+						</div>
+						<img src="./images/dots1_mobile.png" srcset="./images/dots1_mobile.png 1x, ./images/dots1_mobile@2x.png 2x" class="hero_dots1">
+						<img src="./images/dots2_mobile.png" srcset="./images/dots2_mobile.png 1x, ./images/dots2_mobile@2x.png 2x" class="hero_dots2">
+						<img src="./images/hero_mobile.png" srcset="./images/hero_mobile.png 1x, ./images/hero_mobile@2x.png 2x" class="hero_icecream">
+				</div>
+		</div>
+
 		</header>
 
 		<main>
-			<section class="products"></section>
+			<section class="products" id="products">
+				<p>how it's made?</p>
+			</section>
 
-			<section class="about"></section>
+			<section class="about" id="about"></section>
 
 			<section class="advantages"></section>
 
@@ -35,10 +87,14 @@
 
 			<section class="review"></section>
 
-			<section class="contacts"></section>
+			<section class="contacts" id="contacts"></section>
 		</main>
 
 		<footer>
 		</footer>
+
+		<!-- <script src="./js/form.js"></script> -->
+		<script src="./js/menu.js"></script>
+		<!-- <script src="./js/modal.js"></script> -->
 	</body>
 </html>
