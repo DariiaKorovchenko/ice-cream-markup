@@ -1,100 +1,160 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ice cream</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice cream</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Seymour+One&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-		/>
-		<link rel="stylesheet" href="./css/main.min.css" />
-	</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-	<body>
-		<header class="header">
+  <body>
+    <header class="header">
+      <nav class="mobile-navigation">
+        <img class="header_logo" src="./images/Logo.png" alt="logo" />
+        <button
+          type="button"
+          class="mobile-menu_button is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="mobile-menu_icon" aria-label="mobile menu toggle">
+            <use href="./images/sprite.svg#icon-menu" class="open-icon"></use>
+            <use href="./images/sprite.svg#icon-close" class="close-icon"></use>
+          </svg>
+        </button>
 
-				<nav class="mobile-navigation">
-					<img class="header_logo" src="./images/Logo.png">	
-					<button type="button" class="mobile-menu_button is-open" aria-expanded="false" data-menu-button>
-						<svg class="mobile-menu_icon" aria-label="mobile menu toggle">
-							<use href="./images/sprite.svg#icon-menu" class="open-icon"></use>
-							<use href="./images/sprite.svg#icon-close" class="close-icon"></use>
-						</svg>
-					</button>
-					
+        <div class="mobile-menu_container" data-menu>
+          <div class="fixed_container">
+            <ul class="mobile-menu_list">
+              <li class="mobile-menu_link">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="mobile-menu_link">
+                <a href="#about">How it's made?</a>
+              </li>
+              <li class="mobile-menu_link">
+                <a href="#products">Our products</a>
+              </li>
+              <li class="mobile-menu_link">
+                <a href="#contacts">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="buynow-button">Buy now ></button>
+          </div>
+        </div>
+      </nav>
 
+      <div class="hero">
+        <h1 class="hero_title">
+          ICE CREAM <br />MADE WITH <br /><span>PASSION</span>
+        </h1>
 
-					<div class="mobile-menu_container" data-menu>
-						<div class="fixed_container">
-							<ul class="mobile-menu_list">
-								<li class="mobile-menu_link">
-									<a href="./index.html">Home</a>
-								</li>
-								<li class="mobile-menu_link">
-									<a href="#about">How it's made?</a>
-								</li>
-								<li class="mobile-menu_link">
-									<a href="#products">Our products</a>
-								</li>
-								<li class="mobile-menu_link">
-									<a href="#contacts">Contact</a>
-								</li>
-							</ul>
-							<button type="button" class="buynow-button">Buy now ></button>
-						</div>
+        <div class="hero_links">
+          <button type="button" class="hero_button">Products</button>
+          <a href="#about">How it's made?</a>
+        </div>
+        <img
+          src="./images/dots1_mobile.png"
+          srcset="./images/dots1_mobile.png 1x, ./images/dots1_mobile@2x.png 2x"
+          class="hero_dots1"
+          alt="decorative image"
+        />
+        <img
+          src="./images/dots2_mobile.png"
+          srcset="./images/dots2_mobile.png 1x, ./images/dots2_mobile@2x.png 2x"
+          class="hero_dots2"
+          alt="decorative image"
+        />
+        <img
+          src="./images/hero_mobile.png"
+          srcset="./images/hero_mobile.png 1x, ./images/hero_mobile@2x.png 2x"
+          class="hero_icecream"
+          alt="decorative image"
+        />
+      </div>
+    </header>
 
-				</nav>
+    <main>
+      <section class="products container" id="products">
+        <p class="products-narrative">100% natural</p>
+        <h1>PRODUCTS</h1>
 
-				<nav class="navigation">
-					<img class="header_logo" src="./images/Logo.png">
-				</nav>
+        <ul class="products_list">
+          <li class="products_list-item icecream">
+            <h2 class="products_list-name">ICE CREAM</h2>
+            <p>
+              Soft ice cream with a delicate taste. Made with milk, cream, sugar
+              and natural stabilizer
+            </p>
+            <button type="button" class="products_list-item_button">
+              <svg width="40" height="16">
+                <use
+                  href="./images/sprite.svg#arrow"
+                  class="products_list-item_button-arrow"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <li class="products_list-item icecoffee">
+            <h2 class="products_list-name">ICE COFFEE</h2>
+            <p>
+              Fragrant invigorating drink created from 100% natural ingredients
+              without the use of preservatives and flavor enhancers
+            </p>
+            <button type="button" class="products_list-item_button">
+              <svg width="40" height="16">
+                <use
+                  href="./images/sprite.svg#arrow"
+                  class="products_list-item_button-arrow"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <li class="products_list-item milkshake">
+            <h2 class="products_list-name">MILKSHAKES</h2>
+            <p>
+              Sweet drinks based on milk and ice cream, supplemented with
+              syrups, fruits, berries and other sweets of your choice
+            </p>
+            <button type="button" class="products_list-item_button">
+              <svg width="40" height="16">
+                <use
+                  href="./images/sprite.svg#arrow"
+                  class="products_list-item_button-arrow"
+                ></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
 
-				<div class="hero">
-					<h1 class="hero_title">ICE CREAM 
-						<br>MADE WITH <br><span>PASSION</span></h1>
+      <section class="about" id="about"></section>
 
-						<div class="hero_links">
-							<button type="button" class="hero_button">Products</button>
-							<a href="#about">How it's made?</a>
-						</div>
-						<img src="./images/dots1_mobile.png" srcset="./images/dots1_mobile.png 1x, ./images/dots1_mobile@2x.png 2x" class="hero_dots1">
-						<img src="./images/dots2_mobile.png" srcset="./images/dots2_mobile.png 1x, ./images/dots2_mobile@2x.png 2x" class="hero_dots2">
-						<img src="./images/hero_mobile.png" srcset="./images/hero_mobile.png 1x, ./images/hero_mobile@2x.png 2x" class="hero_icecream">
-				</div>
-		</div>
+      <section class="advantages"></section>
 
-		</header>
+      <section class="gallery"></section>
 
-		<main>
-			<section class="products" id="products">
-				<p>how it's made?</p>
-			</section>
+      <section class="review"></section>
 
-			<section class="about" id="about"></section>
+      <section class="contacts" id="contacts"></section>
+    </main>
 
-			<section class="advantages"></section>
+    <footer></footer>
 
-			<section class="gallery"></section>
-
-			<section class="review"></section>
-
-			<section class="contacts" id="contacts"></section>
-		</main>
-
-		<footer>
-		</footer>
-
-		<!-- <script src="./js/form.js"></script> -->
-		<script src="./js/menu.js"></script>
-		<!-- <script src="./js/modal.js"></script> -->
-	</body>
+    <!-- <script src="./js/form.js"></script> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+  </body>
 </html>

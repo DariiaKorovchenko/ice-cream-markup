@@ -1,114 +1,112 @@
 @import "./utils/vars";
 
 .mobile-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    // height: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // height: 37px;
 
-    @media(min-width: 768px) {
-        display: none;
-    }
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu_button {
-    display: inline-flex;
-    border: transparent;
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    background-color: $background_color;
-    z-index: 100;
-    margin-right: 15px;
-    // position: fixed;
+  display: inline-flex;
+  border: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: $background_color;
+  z-index: 100;
+  margin-right: 15px;
+  // position: fixed;
 
-    &.is-open {
-        position: static;
-    }
+  &.is-open {
+    position: static;
+  }
 }
 
 .mobile-menu_container {
-    display: none;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 45px;
-    z-index: 5;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 45px;
+  z-index: 5;
 
-    background-color: $background_color;
+  background-color: $background_color;
 
-    &.is-open {
-        display: block;
+  &.is-open {
+    display: block;
 
-        .fixed_container {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-        }
+    .fixed_container {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
     }
+  }
 }
 
 .mobile-menu_icon {
-    width: 42px;
-    height: 42px;
-    fill: $alternative_text_color;
-
+  width: 42px;
+  height: 42px;
+  fill: $alternative_text_color;
 }
 
 .mobile-menu_button.is-open .close-icon {
-    display: none;
+  display: none;
 }
 
-
 .open-icon {
-    display: none;
+  display: none;
 }
 
 .mobile-menu_button.is-open .open-icon {
-    display: block;
+  display: block;
 }
 
 .buynow-button {
-    display: block;
-    margin: 0 auto;
-    width: 152px;
-    height: 42px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: $default_button_color;
-    font-weight: 600;
-    line-height: 17.07px;
-    font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  width: 152px;
+  height: 42px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: $default_button_color;
+  font-weight: 600;
+  line-height: 17.07px;
+  font-size: 14px;
 
-    &:hover {
-        background-color: $hover_button_color;
-    }
+  &:hover {
+    background-color: $hover_button_color;
+  }
 
-    &:focus {
-        background-color: $hover_button_color;
-        color: $alternative_text_color;
-    }
+  &:focus {
+    background-color: $hover_button_color;
+    color: $alternative_text_color;
+  }
 }
 
 .mobile-menu_list {
-    text-align: center;
-    padding: 0;
-    margin: 50px 0 130px 0;
+  text-align: center;
+  padding: 0;
+  margin: 50px 0 130px 0;
 }
 
 .mobile-menu_link {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .mobile-menu_link a {
-    color: $alternative_text_color;
-    line-height: 39.01px;
-    font-size: 32px;
-    text-decoration: none;
-    font-weight: 700;
+  color: $alternative_text_color;
+  line-height: 39.01px;
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 700;
 
-    &:hover {
-        color: $primary_text_color;
-    }
+  &:hover {
+    color: $primary_text_color;
+  }
 }
