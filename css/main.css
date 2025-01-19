@@ -438,4 +438,136 @@ a {
 .products_list-item_button-arrow {
   width: 40px;
   height: 16px;
+}
+
+.about {
+  background-color: #84A178;
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about_title-container {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about_title {
+  font-family: Seymour One, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37.71px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.about_narrative {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.94px;
+  text-align: center;
+  color: #FCFCFC;
+  text-transform: uppercase;
+}
+
+.about_description {
+  padding: 0;
+  margin: 0;
+  color: #FCFCFC;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19.44px;
+}
+.about_description::before {
+  content: url(../images/about_image.png);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about_description-item {
+  padding: 0 50px;
+  margin-bottom: 10px;
+}
+
+.about_description-item:first-child {
+  line-height: 21.12px;
+  margin-top: 30px;
+}
+
+.about_description-item:last-child {
+  margin-bottom: 20px;
+}
+
+.about_button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  color: #131313;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 37px;
+  background-color: #F8D24E;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.about_button:hover {
+  background-color: #0A8817;
+}
+.about_button:focus {
+  background-color: #0A8817;
+  color: #FCFCFC;
+}
+
+.about_list {
+  text-align: center;
+  padding: 0;
+  color: #FCFCFC;
+}
+
+.about_list-item {
+  padding: 0 50px;
+}
+
+.about_list-picture {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #F8D24E;
+  border-radius: 50%;
+}
+
+.about_list-item_title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.88px;
+  letter-spacing: 4;
+  margin: 15px 0;
+}
+
+.about_list-item_description {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20.4px;
 }/*# sourceMappingURL=main.css.map */
