@@ -1,0 +1,50 @@
+@import './utils/vars';
+
+.advantages {
+    padding: 45px 0 0 0;
+    background-color: $background_color;
+}
+
+.advantages_list {
+    text-align: center;
+    padding: 0;
+    color: $alternative_text_color;
+}
+
+.advantages_list-item {
+    padding: 0 50px;
+}
+
+.advantages_list-item:first-child {
+    &::before {
+        content: url(../images/cow.png);
+    }
+}
+
+.advantages_list-item:nth-child(2n) {
+    &::before {
+        content: url(../images/weight.png);
+    }
+}
+
+.advantages_list-item:last-child {
+    &::before {
+        content: url(../images/ice\ cream.png)
+    }
+}
+
+.advantages_list-item_title {
+    font-family: $basic-font;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.88px;
+    letter-spacing: 4;
+    margin: 15px 0;
+}
+
+.advantages_list-item_description {
+    font-family: $basic-font;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+}

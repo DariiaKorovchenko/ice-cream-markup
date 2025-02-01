@@ -71,7 +71,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 35px;
     color: $primary_text_color;
     font-family: $basic-font;
     font-weight: 600;
@@ -90,43 +89,4 @@
         background-color: $hover_button_color;
         color: $alternative_text_color;
     }
-}
-
-.about_list {
-    text-align: center;
-    padding: 0;
-    color: $alternative_text_color;
-
-}
-
-.about_list-item {
-padding: 0 50px;
-}
-
-.about_list-picture {
-    margin-left: auto;
-    margin-right: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: $default_button_color;
-    border-radius: 50%;
-}
-
-.about_list-item_title {
-    font-family: $basic-font;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43.88px;
-    letter-spacing: 4;
-    margin: 15px 0;
-}
-
-.about_list-item_description {
-    font-family: $basic-font;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20.4px;
 }

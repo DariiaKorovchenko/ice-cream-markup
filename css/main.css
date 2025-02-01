@@ -509,7 +509,6 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 35px;
   color: #131313;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -528,35 +527,34 @@ a {
   color: #FCFCFC;
 }
 
-.about_list {
+.advantages {
+  padding: 45px 0 0 0;
+  background-color: #84A178;
+}
+
+.advantages_list {
   text-align: center;
   padding: 0;
   color: #FCFCFC;
 }
 
-.about_list-item {
+.advantages_list-item {
   padding: 0 50px;
 }
 
-.about_list-picture {
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #F8D24E;
-  border-radius: 50%;
+.advantages_list-item:first-child::before {
+  content: url(../images/cow.png);
 }
 
-.about_list-item_title {
+.advantages_list-item:nth-child(2n)::before {
+  content: url(../images/weight.png);
+}
+
+.advantages_list-item:last-child::before {
+  content: url(../images/ice\ cream.png);
+}
+
+.advantages_list-item_title {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -565,7 +563,7 @@ a {
   margin: 15px 0;
 }
 
-.about_list-item_description {
+.advantages_list-item_description {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 12px;
