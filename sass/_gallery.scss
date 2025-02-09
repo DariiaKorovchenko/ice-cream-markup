@@ -1,0 +1,57 @@
+@import "./utils/vars";
+
+.gallery {
+    padding-top: 20px;
+    background-color: $background_color;
+    position: relative;
+}
+
+.gallery_image {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 280px;
+    // opacity: 100%;
+    // animation-name: ChangeImages;
+    // animation-duration: 1000ms;
+    // animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+    // animation-delay: 10000ms;
+
+    // &:first-child {
+    //     opacity: 100%;
+    //     animation-name: ChangeImage;
+    //     animation-duration: 3000ms;
+    // }
+
+    // &:last-child {
+    //     position: absolute;
+    //     top: 20px;
+    //     left: 0;
+    //     right: 0;
+    //     opacity: 0;
+    // }
+
+    // &:nth-child(2n) {
+    //     position: absolute;
+    //     top: 20px;
+    //     left: 0;
+    //     right: 0;
+    //     opacity: 0;
+    // }
+}
+
+// @keyframes ChangeImages {
+//     0% {
+//         opacity: 100%;
+//     }
+
+//     50% {
+//         opacity: 50%;
+//     }
+
+//     100% {
+//         opacity: 0;
+//     }
+// }

@@ -1,4 +1,10 @@
-.mobile-navigation {
+@media (min-width: 768px) {
+  .mobile-navigation {
+    display: none;
+  }
+}
+
+.mobile-navigation_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,11 +19,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 768px) {
-  .mobile-navigation {
-    display: none;
-  }
-}
 
 .mobile-menu_button {
   display: -webkit-inline-box;
@@ -30,6 +31,9 @@
   background-color: #84A178;
   z-index: 100;
   margin-right: 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .mobile-menu_button.is-open {
   position: static;
@@ -40,7 +44,7 @@
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 45px;
+  top: 0;
   z-index: 5;
   background-color: #84A178;
 }
@@ -51,6 +55,8 @@
   position: fixed;
   width: 100%;
   height: 100vh;
+  background-color: #84A178;
+  overflow-y: hidden;
 }
 
 .mobile-menu_icon {

@@ -1,15 +1,17 @@
 @import "./utils/vars";
 
 .mobile-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  // height: 37px;
 
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.mobile-navigation_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mobile-menu_button {
@@ -21,7 +23,10 @@
   background-color: $background_color;
   z-index: 100;
   margin-right: 15px;
-  // position: fixed;
+  position: fixed; 
+  top: 0;
+  right: 0;
+
 
   &.is-open {
     position: static;
@@ -33,7 +38,7 @@
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 45px;
+  top: 0;
   z-index: 5;
 
   background-color: $background_color;
@@ -45,6 +50,8 @@
       position: fixed;
       width: 100%;
       height: 100vh;
+      background-color: $background_color;
+      overflow-y: hidden;
     }
   }
 }
