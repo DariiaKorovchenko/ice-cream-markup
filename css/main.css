@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -534,7 +534,7 @@ a {
 }
 
 .advantages {
-  padding: 45px 0 0 0;
+  padding: 45px 0 65px 0;
   background-color: #84A178;
 }
 
@@ -581,9 +581,12 @@ a {
 }
 
 .gallery {
-  padding-top: 20px;
-  background-color: #84A178;
   position: relative;
+}
+
+.gallery_container {
+  position: relative;
+  top: -30px;
 }
 
 .gallery_image {
@@ -591,5 +594,184 @@ a {
   margin-right: auto;
   border: 1px solid transparent;
   border-radius: 10px;
-  width: 280px;
+}
+
+.reviews {
+  margin-top: -100px;
+  background-image: url(../images/background_mobile.jpg);
+  background-size: 100vw;
+  height: 100vh;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url(../images/backgroud_mobile@2x.jpg);
+    background-size: 150vw;
+  }
+}
+
+.reviews_slider {
+  display: block;
+  padding: 200px 70px 0 70px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+}
+
+.contacts {
+  background-color: #84A178;
+  position: relative;
+  margin-bottom: -345px;
+}
+
+.contacts_list {
+  margin-bottom: -345px;
+  position: relative;
+  top: -345px;
+  padding: 0;
+}
+
+.contacts_list-item {
+  max-width: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  padding: 40px 25px 20px 25px;
+  background-color: #FCFCFC;
+}
+.contacts_list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.contacts_list-item_title {
+  margin-top: 10px;
+  padding: 4px 23px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #F8D24E;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.contacts_list-item_location {
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22.32px;
+  letter-spacing: 0.48px;
+}
+
+.contacts_list-item_address {
+  color: #D6936D;
+  font-style: normal;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21.96px;
+  letter-spacing: 0.48px;
+  position: relative;
+}
+.contacts_list-item_address::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #E1E1E1;
+}
+
+.contacts_list-item_schedule {
+  margin: 30px 0;
+  position: relative;
+}
+.contacts_list-item_schedule::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #E1E1E1;
+}
+
+.contacts_list-item_week {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22.32px;
+  letter-spacing: 0;
+}
+
+.contacts_list-item_time {
+  margin: 0 0 15px 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22.32px;
+  letter-spacing: 0;
+  color: #ABABAB;
+}
+
+.contacts_list-item_contacts {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22.32px;
+  letter-spacing: 0;
+  color: #131313;
+}
+
+.contacts_button-locations {
+  display: block;
+  width: 196px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  background-color: #F8D24E;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.contacts_button-locations:hover {
+  background-color: #0A8817;
+}
+.contacts_button-locations:focus {
+  background-color: #0A8817;
+  color: #FCFCFC;
+}
+
+.contacts_button-franchise {
+  display: block;
+  width: 196px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.contacts_button-franchise:hover {
+  border: 2px solid #0A8817;
+}
+.contacts_button-franchise:focus {
+  border: 2px solid #0A8817;
+  color: #FCFCFC;
 }/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,12 @@
 @import "./utils/vars";
 
 .gallery {
-    padding-top: 20px;
-    background-color: $background_color;
     position: relative;
+}
+
+.gallery_container {
+    position: relative;
+    top: -30px;
 }
 
 .gallery_image {
@@ -11,7 +14,6 @@
     margin-right: auto;
     border: 1px solid transparent;
     border-radius: 10px;
-    width: 280px;
     // opacity: 100%;
     // animation-name: ChangeImages;
     // animation-duration: 1000ms;
