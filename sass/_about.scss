@@ -76,9 +76,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    padding: 10px 37px;
+    padding: 9px 37px 10px 37px; 
     background-color: $default_button_color;
-    border: 1px solid transparent;
+    border: 0 solid transparent;
     border-radius: 10px;
 
     &:hover {

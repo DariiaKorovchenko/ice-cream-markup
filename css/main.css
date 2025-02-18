@@ -520,9 +520,9 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 37px;
+  padding: 9px 37px 10px 37px;
   background-color: #F8D24E;
-  border: 1px solid transparent;
+  border: 0 solid transparent;
   border-radius: 10px;
 }
 .about_button:hover {
@@ -774,4 +774,112 @@ a {
 .contacts_button-franchise:focus {
   border: 2px solid #0A8817;
   color: #FCFCFC;
+}
+
+.footer {
+  background-color: #84A178;
+  padding-top: 400px;
+}
+
+.footer_title {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: #FCFCFC;
+  text-transform: uppercase;
+}
+
+.footer_title2 {
+  margin: 20px 0 0 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41.45px;
+  color: #FCFCFC;
+  text-transform: uppercase;
+}
+
+.footer_network-list {
+  margin-top: 40px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+.footer_network-list_item {
+  margin-left: 20px;
+}
+
+.footer_network-list_item_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 34px;
+  width: 34px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #F8D24E;
+}
+.footer_network-list_item_link:hover .footer_network-list_item_link_image {
+  fill: #FCFCFC;
+}
+.footer_network-list_item_link:focus .footer_network-list_item_link_image {
+  fill: #FCFCFC;
+}
+
+.footer_network-list_item_link_image {
+  fill: #84A178;
+}
+
+.footer_contact-ph {
+  margin: 15px 0 0 0;
+  padding: 0 0 30px 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22.32px;
+  color: #131313;
+  text-align: end;
+}
+
+.footer_contact-ph a {
+  color: #FCFCFC;
+}
+
+.back_footer {
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21.28px;
+  color: #7A7A7A;
+  background-color: #84A178;
+  position: relative;
+}
+.back_footer::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: #E1E1E1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.back_footer p {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
