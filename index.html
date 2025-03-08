@@ -10,12 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -23,19 +21,20 @@
     <header class="header">
       <nav class="mobile-navigation">
         <div class="mobile-navigation_header">
-        <img class="header_logo" src="./images/Logo.png" alt="logo" />
-        <button
-          type="button"
-          class="mobile-menu_button is-open"
-          aria-expanded="false"
-          data-menu-button
-        >
-          <svg class="mobile-menu_icon" aria-label="mobile menu toggle">
-            <use href="./images/sprite.svg#icon-menu" class="open-icon"></use>
-            <use href="./images/sprite.svg#icon-close" class="close-icon"></use>
-          </svg>
-        </button>
-      </div>
+          <img class="header_logo" src="./images/Logo.png" alt="logo" />
+          <button
+            type="button"
+            class="mobile-menu_button is-open"
+            aria-expanded="false"
+            data-menu-button>
+            <svg class="mobile-menu_icon" aria-label="mobile menu toggle">
+              <use href="./images/sprite.svg#icon-menu" class="open-icon"></use>
+              <use
+                href="./images/sprite.svg#icon-close"
+                class="close-icon"></use>
+            </svg>
+          </button>
+        </div>
 
         <div class="mobile-menu_container" data-menu>
           <div class="fixed_container">
@@ -72,20 +71,17 @@
           src="./images/dots1_mobile.png"
           srcset="./images/dots1_mobile.png 1x, ./images/dots1_mobile@2x.png 2x"
           class="hero_dots1"
-          alt="decorative image"
-        />
+          alt="decorative image" />
         <img
           src="./images/dots2_mobile.png"
           srcset="./images/dots2_mobile.png 1x, ./images/dots2_mobile@2x.png 2x"
           class="hero_dots2"
-          alt="decorative image"
-        />
+          alt="decorative image" />
         <img
           src="./images/hero_mobile.png"
           srcset="./images/hero_mobile.png 1x, ./images/hero_mobile@2x.png 2x"
           class="hero_icecream"
-          alt="decorative image"
-        />
+          alt="decorative image" />
       </div>
     </header>
 
@@ -94,6 +90,109 @@
         <p class="products-narrative">100% natural</p>
         <h1>PRODUCTS</h1>
 
+        <div class="backdrop is-hidden" data-modal-ingredients>
+          <div class="modal_ingredients">
+            <div class="modal_ingredients_container">
+              <h3 class="modal_ingredients_title">Chololate <br />icecream</h3>
+              <img
+                src="./images/modal_ingredients_image.png"
+                class="modal_ingredients_image"
+                alt="product image" />
+              <ul class="modal_ingredients_characteristics_list">
+                <li class="modal_ingredients_characteristics_list-item">
+                  <span class="span1">320</span>
+                  <span class="span2">kcal</span>
+                </li>
+                <li class="modal_ingredients_characteristics_list-item">
+                  <span class="span1">4g</span>
+                  <span class="span2">Prote...</span>
+                </li>
+                <li class="modal_ingredients_characteristics_list-item">
+                  <span class="span1">8,2g</span>
+                  <span class="span2">Fats</span>
+                </li>
+                <li class="modal_ingredients_characteristics_list-item">
+                  <span class="span1">40,4g</span>
+                  <span class="span2">Carbs</span>
+                </li>
+              </ul>
+              <p class="modal_ingredients_title2">Ingredients</p>
+              <ul class="modal_ingredients_components-list">
+                <li class="modal_ingredients_components-list_item">
+                  <span>Milk</span>
+                  <span>100ml</span>
+                </li>
+                <li class="modal_ingredients_components-list_item">
+                  <span>Belgian chocolate</span>
+                  <span>20g</span>
+                </li>
+                <li class="modal_ingredients_components-list_item">
+                  <span>Cream</span>
+                  <span>150 ml</span>
+                </li>
+                <li class="modal_ingredients_components-list_item">
+                  <span>Cocoa powder</span>
+                  <span>30g</span>
+                </li>
+                <li class="modal_ingredients_components-list_item">
+                  <span>Sugar</span>
+                  <span>40g</span>
+                </li>
+                <li class="modal_ingredients_components-list_item">
+                  <span>Vanilla sugar</span>
+                  <span>10g</span>
+                </li>
+              </ul>
+
+              <form
+                class="modal_ingredients_form"
+                name="modal_ingredients_form"
+                autocomplete="on"
+                js-speaker-form>
+                <label class="modal_ingredients_form_formfield">
+                  <!-- <span class="modal_ingredients_form_formfield__name"
+                    >Name</span
+                  > -->
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Name"
+                    autofocus
+                    required
+                    class="modal_ingredients_form_formfield__input" />
+                </label>
+                <label class="modal_ingredients_form_formfield">
+                  <!-- <span class="modal_ingredients_form_formfield__tel"
+                    >Phone</span
+                  > -->
+                  <input
+                    type="tel"
+                    name="telephone-number"
+                    required
+                    placeholder="Phone"
+                    class="modal_ingredients_form_formfield__input" />
+                </label>
+                <textarea
+                  name="comment"
+                  placeholder="Comment"
+                  class="modal_ingredients_form_formfield__comment"></textarea>
+
+                <button type="submit" class="modal_ingredients_button">
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <button
+              class="modal_ingredients_close-button"
+              data-modal-ingredients-close>
+              <svg class="modal_ingredients_close-button_icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
         <ul class="products_list">
           <li class="products_list-item icecream">
             <h2 class="products_list-name">ICE CREAM</h2>
@@ -101,12 +200,14 @@
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
-            <button type="button" class="products_list-item_button">
+            <button
+              type="button"
+              class="products_list-item_button"
+              data-modal-ingredients-open>
               <svg width="40" height="16">
                 <use
                   href="./images/sprite.svg#arrow"
-                  class="products_list-item_button-arrow"
-                ></use>
+                  class="products_list-item_button-arrow"></use>
               </svg>
             </button>
           </li>
@@ -120,8 +221,7 @@
               <svg width="40" height="16">
                 <use
                   href="./images/sprite.svg#arrow"
-                  class="products_list-item_button-arrow"
-                ></use>
+                  class="products_list-item_button-arrow"></use>
               </svg>
             </button>
           </li>
@@ -135,8 +235,7 @@
               <svg width="40" height="16">
                 <use
                   href="./images/sprite.svg#arrow"
-                  class="products_list-item_button-arrow"
-                ></use>
+                  class="products_list-item_button-arrow"></use>
               </svg>
             </button>
           </li>
@@ -172,15 +271,21 @@
         <ul class="advantages_list">
           <li class="advantages_list-item">
             <h2 class="advantages_list-item_title">721</h2>
-            <p class="advantages_list-item_description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <p class="advantages_list-item_description">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
           </li>
           <li class="advantages_list-item">
             <h2 class="advantages_list-item_title">16kg</h2>
-            <p class="advantages_list-item_description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <p class="advantages_list-item_description">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
           </li>
           <li class="advantages_list-item">
             <h2 class="advantages_list-item_title">84</h2>
-            <p class="advantages_list-item_description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <p class="advantages_list-item_description">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
           </li>
         </ul>
       </section>
@@ -188,12 +293,15 @@
       <section class="gallery container">
         <h1 class="gallery_title visually-hidden">Gallery</h1>
         <div class="gallery_container">
-        <img src="./images/gallery_desktop_1.png"
-        srcset="./images/gallery_desktop_1.png 1x, ./images/gallery_desktop_1@2x.png 2x"
-        class="gallery_image"
-        alt="gallery image of products"
-        />
-        <!-- <img src="./images/gallery_desktop_2.png" 
+          <img
+            src="./images/gallery_desktop_1.png"
+            srcset="
+              ./images/gallery_desktop_1.png    1x,
+              ./images/gallery_desktop_1@2x.png 2x
+            "
+            class="gallery_image"
+            alt="gallery image of products" />
+          <!-- <img src="./images/gallery_desktop_2.png" 
         srcset="./images/gallery_desktop_2.png 1x, ./images/gallery_desktop_2@2x.png 2x"
         class="gallery_image"
         alt="gallery image of products"
@@ -203,7 +311,7 @@
         class="gallery_image"
         alt="gallery image of products"
         /> -->
-      </div>
+        </div>
       </section>
 
       <section class="reviews">
@@ -215,8 +323,6 @@
             <sviper-slide>Slide 3</sviper-slide>
           </sviper-container>
         </div>
-
-
       </section>
 
       <section class="contacts container" id="contacts">
@@ -226,96 +332,149 @@
             <div class="contacts_list-item_container">
               <h2 class="contacts_list-item_title">cafe</h2>
               <p class="contacts_list-item_location">Chicago</p>
-              <address class="contacts_list-item_address">10340 Ridgeland Ave, <br> Chicago Ridge, IL 60415, USA</address>
+              <address class="contacts_list-item_address">
+                10340 Ridgeland Ave, <br />
+                Chicago Ridge, IL 60415, USA
+              </address>
               <div class="contacts_list-item_schedule">
-              <p class="contacts_list-item_week">Monday - Friday</p>
-              <p class="contacts_list-item_time">06:00 AM - 10:00 PM</p>
-              <p class="contacts_list-item_week">Saturday - Sunday</p>
-              <p class="contacts_list-item_time">08:00 AM - 16:00 PM</p>
-            </div>
+                <p class="contacts_list-item_week">Monday - Friday</p>
+                <p class="contacts_list-item_time">06:00 AM - 10:00 PM</p>
+                <p class="contacts_list-item_week">Saturday - Sunday</p>
+                <p class="contacts_list-item_time">08:00 AM - 16:00 PM</p>
+              </div>
 
-              <a href="tel:+61(0)383766284" class="contacts_list-item_contacts">+61(0) 383 766 284</a>
-              <a href="mailto:noreply@envato.com" class="contacts_list-item_contacts">noreply@envato.com</a>
+              <a href="tel:+61(0)383766284" class="contacts_list-item_contacts"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="contacts_list-item_contacts"
+                >noreply@envato.com</a
+              >
             </div>
           </li>
           <li class="contacts_list-item">
             <div class="contacts_list-item_container">
               <h2 class="contacts_list-item_title">foodtruck</h2>
               <p class="contacts_list-item_location">Los Angeles</p>
-              <address class="contacts_list-item_address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</address>
+              <address class="contacts_list-item_address">
+                1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+              </address>
 
               <div class="contacts_list-item_schedule">
-              <p class="contacts_list-item_week">Monday - Friday</p>
-              <p class="contacts_list-item_time">06:00 AM - 10:00 PM</p>
-              <p class="contacts_list-item_week">Saturday - Sunday</p>
-              <p class="contacts_list-item_time">08:00 AM - 16:00 PM</p>
-            </div>
+                <p class="contacts_list-item_week">Monday - Friday</p>
+                <p class="contacts_list-item_time">06:00 AM - 10:00 PM</p>
+                <p class="contacts_list-item_week">Saturday - Sunday</p>
+                <p class="contacts_list-item_time">08:00 AM - 16:00 PM</p>
+              </div>
 
-              <a href="tel:+61(0)383766284" class="contacts_list-item_contacts">+61(0) 383 766 284</a>
-              <a href="mailto:noreply@envato.com" class="contacts_list-item_contacts">noreply@envato.com</a>
+              <a href="tel:+61(0)383766284" class="contacts_list-item_contacts"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="contacts_list-item_contacts"
+                >noreply@envato.com</a
+              >
             </div>
           </li>
           <li class="contacts_list-item">
             <div class="contacts_list-item_container">
               <h2 class="contacts_list-item_title">cafe</h2>
               <p class="contacts_list-item_location">New York</p>
-              <address class="contacts_list-item_address">726 Sterling Pl, Brooklyn, NY 11222, USA</address>
+              <address class="contacts_list-item_address">
+                726 Sterling Pl, Brooklyn, NY 11222, USA
+              </address>
 
               <div class="contacts_list-item_schedule">
-              <p class="contacts_list-item_week">Monday - Friday</p>
-              <p class="contacts_list-item_time">06:00 AM - 10:00 PM</p>
-              <p class="contacts_list-item_week">Saturday - Sunday</p>
-              <p class="contacts_list-item_time">08:00 AM - 16:00 PM</p>
-            </div>
+                <p class="contacts_list-item_week">Monday - Friday</p>
+                <p class="contacts_list-item_time">06:00 AM - 10:00 PM</p>
+                <p class="contacts_list-item_week">Saturday - Sunday</p>
+                <p class="contacts_list-item_time">08:00 AM - 16:00 PM</p>
+              </div>
 
-              <a href="tel:+61(0)383766284" class="contacts_list-item_contacts">+61(0) 383 766 284</a>
-              <a href="mailto:noreply@envato.com" class="contacts_list-item_contacts">noreply@envato.com</a>
+              <a href="tel:+61(0)383766284" class="contacts_list-item_contacts"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="contacts_list-item_contacts"
+                >noreply@envato.com</a
+              >
             </div>
           </li>
         </ul>
 
-        <button type="button" class="contacts_button-locations">Our locations ></button>
-        <button type="button" class="contacts_button-franchise">Franchise ></button>
+        <button type="button" class="contacts_button-locations">
+          Our locations >
+        </button>
+        <button type="button" class="contacts_button-franchise">
+          Franchise >
+        </button>
       </section>
     </main>
 
     <footer class="footer container">
       <p class="footer_title">homemade ice cream made</p>
-      <p class="footer_title2">with <br>passion</p>
+      <p class="footer_title2">with <br />passion</p>
 
       <ul class="footer_network-list">
         <li class="footer_network-list_item">
-          <a class="footer_network-list_item_link" href="https://github.com/" target="_blank" aria-label="github link">
-            <svg class="footer_network-list_item_link_image" width="20" height="20">
+          <a
+            class="footer_network-list_item_link"
+            href="https://github.com/"
+            target="_blank"
+            aria-label="github link">
+            <svg
+              class="footer_network-list_item_link_image"
+              width="20"
+              height="20">
               <use href="./images/sprite.svg#icon-github"></use>
             </svg>
           </a>
         </li>
         <li class="footer_network-list_item">
-          <a class="footer_network-list_item_link" href="https://telegram.org/" target="_blank" aria-label="telegram link">
-            <svg class="footer_network-list_item_link_image" width="20" height="20">
+          <a
+            class="footer_network-list_item_link"
+            href="https://telegram.org/"
+            target="_blank"
+            aria-label="telegram link">
+            <svg
+              class="footer_network-list_item_link_image"
+              width="20"
+              height="20">
               <use href="./images/sprite.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
         <li class="footer_network-list_item">
-          <a class="footer_network-list_item_link" href="https://www.facebook.com/" target="_blank" aria-label="facebook link">
-            <svg class="footer_network-list_item_link_image" width="20" height="20">
-              <use  href="./images/sprite.svg#icon-facebook"></use>
+          <a
+            class="footer_network-list_item_link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="facebook link">
+            <svg
+              class="footer_network-list_item_link_image"
+              width="20"
+              height="20">
+              <use href="./images/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <p class="footer_contact-ph">Feel free to contact <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a></p>
+      <p class="footer_contact-ph">
+        Feel free to contact
+        <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+      </p>
     </footer>
 
     <footer class="back_footer container">
       <p>© 2022 - IceCream.</p>
       <p>All Rights Reserved.</p>
     </footer>
-    <!-- <script src="./js/form.js"></script> -->
+    <script src="./js/form.js"></script>
     <script src="./js/menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

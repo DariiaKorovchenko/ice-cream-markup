@@ -1,0 +1,208 @@
+@import "./utils/vars";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+body.modal-ingredients-open {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal_ingredients_close-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_ingredients_close-button_icon {
+  fill: $primary_text_color;
+  width: 20px;
+  height: 20px;
+}
+
+.modal_ingredients {
+  display: flex;
+  justify-content: space-between;
+  transform: scale(1);
+  padding: 20px;
+
+  background-color: $alternative_text_color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal_ingredients_container {
+  min-width: 240px;
+}
+
+.modal_ingredients_title {
+  margin: 0;
+  font-family: $support_font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.modal_ingredients_image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.modal_ingredients_characteristics_list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $basic_font;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+}
+
+.modal_ingredients_characteristics_list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  width: 53px;
+  height: 72px;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.span1 {
+  width: 43px;
+  height: 44px;
+  padding-top: 3px;
+  background-color: #9cbe8f;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px 0 rgba(10, 136, 23, 0.25);
+}
+
+.modal_ingredients_title2 {
+  text-align: center;
+  margin: 30px 0;
+  font-family: $basic_font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.modal_ingredients_components-list {
+  padding: 0;
+  font-family: $basic_font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+}
+
+.modal_ingredients_components-list_item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.modal_ingredients_form_formfield__input {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid $hover_button_color;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+
+  &::placeholder {
+    color: $primary_text_color;
+  }
+}
+
+.modal_ingredients_form_formfield__comment {
+  width: 100%;
+  height: 84px;
+  padding: 10px 0 0 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid $hover_button_color;
+  border-radius: 10px;
+  position: relative;
+
+  &::placeholder {
+    color: $primary_text_color;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.modal_ingredients_button {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 42px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: $default_button_color;
+
+  font-family: $basic_font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+
+  &:hover {
+    background-color: $hover_button_color;
+  }
+
+  &:focus {
+    background-color: $hover_button_color;
+    color: $alternative_text_color;
+  }
+}
