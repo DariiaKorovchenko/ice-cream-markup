@@ -53,10 +53,71 @@
                 <a href="#contacts">Contact</a>
               </li>
             </ul>
-            <button type="button" class="buynow-button">Buy now ></button>
+            <button type="button" class="buynow-button" data-modal-buynow-open>
+              Buy now >
+            </button>
           </div>
         </div>
       </nav>
+
+      <div class="backdrop is-hidden" data-modal-buynow>
+        <div class="modal_buynow">
+          <div class="modal_buynow_container">
+            <h3 class="modal_buynow_title">Buy now</h3>
+            <ul class="modal_buynow_list">
+              <li class="modal_buynow_list-item modal_buynow_icecream">
+                <p class="modal_buynow_list-item__title">ICE CREAM</p>
+              </li>
+              <li class="modal_buynow_list-item modal_buynow_icecoffee">
+                <p class="modal_buynow_list-item__title">ICE COFFEE</p>
+              </li>
+              <li class="modal_buynow_list-item modal_buynow_milkshake">
+                <p class="modal_buynow_list-item__title">MILKSHAKE</p>
+              </li>
+            </ul>
+
+            <form
+              class="modal_ingredients_form"
+              name="modal_ingredients_form"
+              autocomplete="on"
+              js-speaker-form>
+              <label class="modal_ingredients_form_formfield">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Name"
+                  autofocus
+                  required
+                  class="modal_ingredients_form_formfield__input" />
+              </label>
+              <label class="modal_ingredients_form_formfield">
+                <input
+                  type="tel"
+                  name="telephone-number"
+                  required
+                  placeholder="Phone"
+                  class="modal_ingredients_form_formfield__input" />
+              </label>
+              <textarea
+                name="comment"
+                placeholder="Comment"
+                class="modal_ingredients_form_formfield__comment"></textarea>
+
+              <button type="submit" class="modal_ingredients_button">
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <button
+            class="modal_ingredients_close-button"
+            data-modal-buynow-close>
+            <svg class="modal_ingredients_close-button_icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <div class="hero">
         <h1 class="hero_title">
@@ -150,9 +211,6 @@
                 autocomplete="on"
                 js-speaker-form>
                 <label class="modal_ingredients_form_formfield">
-                  <!-- <span class="modal_ingredients_form_formfield__name"
-                    >Name</span
-                  > -->
                   <input
                     type="text"
                     name="username"
@@ -162,9 +220,6 @@
                     class="modal_ingredients_form_formfield__input" />
                 </label>
                 <label class="modal_ingredients_form_formfield">
-                  <!-- <span class="modal_ingredients_form_formfield__tel"
-                    >Phone</span
-                  > -->
                   <input
                     type="tel"
                     name="telephone-number"
