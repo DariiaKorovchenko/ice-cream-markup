@@ -61,8 +61,8 @@
       </nav>
 
       <div class="backdrop is-hidden" data-modal-buynow>
-        <div class="modal_buynow">
-          <div class="modal_buynow_container">
+        <div class="modal buynow">
+          <div class="modal_container">
             <h3 class="modal_buynow_title">Buy now</h3>
             <ul class="modal_buynow_list">
               <li class="modal_buynow_list-item modal_buynow_icecream">
@@ -77,42 +77,38 @@
             </ul>
 
             <form
-              class="modal_ingredients_form"
-              name="modal_ingredients_form"
+              class="modal_form"
+              name="modal_form"
               autocomplete="on"
               js-speaker-form>
-              <label class="modal_ingredients_form_formfield">
+              <label class="modal_form_formfield">
                 <input
                   type="text"
                   name="username"
                   placeholder="Name"
                   autofocus
                   required
-                  class="modal_ingredients_form_formfield__input" />
+                  class="modal_form_formfield__input" />
               </label>
-              <label class="modal_ingredients_form_formfield">
+              <label class="modal_form_formfield">
                 <input
                   type="tel"
                   name="telephone-number"
                   required
                   placeholder="Phone"
-                  class="modal_ingredients_form_formfield__input" />
+                  class="modal_form_formfield__input" />
               </label>
               <textarea
                 name="comment"
                 placeholder="Comment"
-                class="modal_ingredients_form_formfield__comment"></textarea>
+                class="modal_form_formfield__comment"></textarea>
 
-              <button type="submit" class="modal_ingredients_button">
-                Submit
-              </button>
+              <button type="submit" class="modal_form_button">Submit</button>
             </form>
           </div>
 
-          <button
-            class="modal_ingredients_close-button"
-            data-modal-buynow-close>
-            <svg class="modal_ingredients_close-button_icon">
+          <button class="modal_close-button" data-modal-buynow-close>
+            <svg class="modal_close-button_icon">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -152,8 +148,8 @@
         <h1>PRODUCTS</h1>
 
         <div class="backdrop is-hidden" data-modal-ingredients>
-          <div class="modal_ingredients">
-            <div class="modal_ingredients_container">
+          <div class="modal ingredients">
+            <div class="modal_container">
               <h3 class="modal_ingredients_title">Chololate <br />icecream</h3>
               <img
                 src="./images/modal_ingredients_image.png"
@@ -206,42 +202,38 @@
               </ul>
 
               <form
-                class="modal_ingredients_form"
-                name="modal_ingredients_form"
+                class="modal_form"
+                name="modal_form"
                 autocomplete="on"
                 js-speaker-form>
-                <label class="modal_ingredients_form_formfield">
+                <label class="modal_form_formfield">
                   <input
                     type="text"
                     name="username"
                     placeholder="Name"
                     autofocus
                     required
-                    class="modal_ingredients_form_formfield__input" />
+                    class="modal_form_formfield__input" />
                 </label>
-                <label class="modal_ingredients_form_formfield">
+                <label class="modal_form_formfield">
                   <input
                     type="tel"
                     name="telephone-number"
                     required
                     placeholder="Phone"
-                    class="modal_ingredients_form_formfield__input" />
+                    class="modal_form_formfield__input" />
                 </label>
                 <textarea
                   name="comment"
                   placeholder="Comment"
-                  class="modal_ingredients_form_formfield__comment"></textarea>
+                  class="modal_form_formfield__comment"></textarea>
 
-                <button type="submit" class="modal_ingredients_button">
-                  Submit
-                </button>
+                <button type="submit" class="modal_form_button">Submit</button>
               </form>
             </div>
 
-            <button
-              class="modal_ingredients_close-button"
-              data-modal-ingredients-close>
-              <svg class="modal_ingredients_close-button_icon">
+            <button class="modal_close-button" data-modal-ingredients-close>
+              <svg class="modal_close-button_icon">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
             </button>
@@ -318,7 +310,40 @@
             This is enough to choose ice cream and coffee for any mood!
           </li>
         </ul>
-        <button type="button" class="about_button">Read more ></button>
+        <button type="button" class="about_button" data-modal-readmore-open>
+          Read more >
+        </button>
+
+        <div class="backdrop is-hidden" data-modal-readmore>
+          <div class="modal readmore">
+            <div class="modal_container">
+              <h3 class="modal_readmore_title">How it's made?</h3>
+
+              <iframe
+                width="224"
+                height="199"
+                src="https://www.youtube.com/embed/5hVfxEc6WyY"
+                title="How it's made?"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+
+              <p class="modal_readmore_info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+              </p>
+            </div>
+
+            <button class="modal_close-button" data-modal-readmore-close>
+              <svg class="modal_close-button_icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="advantages container">
@@ -460,12 +485,110 @@
           </li>
         </ul>
 
-        <button type="button" class="contacts_button-locations">
+        <button
+          type="button"
+          class="contacts_button-locations"
+          data-modal-location-open>
           Our locations >
         </button>
-        <button type="button" class="contacts_button-franchise">
+
+        <div class="backdrop is-hidden" data-modal-location>
+          <div class="modal location">
+            <div class="modal_container">
+              <h3 class="modal_location_title">Our Locations</h3>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7193.704959023569!2d30.506611046086196!3d50.397150870003735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c94121f24e75%3A0xcd0d5793bc7b7aa9!2z0JPQvtC70L7RgdGW0ZfQstGB0YzQutC40Lkg0L_QsNGA0Lo!5e0!3m2!1suk!2sua!4v1741718357937!5m2!1suk!2sua"
+                width="224"
+                height="199"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <a
+                href="https://maps.app.goo.gl/QmAcDsmxVdjop6iF9"
+                class="modal_location_map-button"
+                target="_blank">
+                Open map
+              </a>
+            </div>
+
+            <button class="modal_close-button" data-modal-location-close>
+              <svg class="modal_close-button_icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="contacts_button-franchise"
+          data-modal-franchise-open>
           Franchise >
         </button>
+
+        <div class="backdrop is-hidden" data-modal-franchise>
+          <div class="modal franchise">
+            <div class="modal_container">
+              <h3 class="modal_franchise_title">
+                Thank you for your interest in owning an Ice Cream shop
+              </h3>
+              <p class="modal_franchise_info">
+                Due to the overwhelming volume of franchise requests we are not
+                accepting new franchisee applications at this time. Once the
+                application process resumes, we will contact you for further
+                information. Please fill out the contact information below and
+                we will reach out for additional information. We appreciate your
+                patience.
+              </p>
+              <form
+                class="modal_form"
+                name="modal_form"
+                autocomplete="on"
+                js-speaker-form>
+                <label class="modal_form_formfield">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Name"
+                    autofocus
+                    required
+                    class="modal_form_formfield__input" />
+                </label>
+                <label class="modal_form_formfield">
+                  <input
+                    type="tel"
+                    name="telephone-number"
+                    required
+                    placeholder="Phone"
+                    class="modal_form_formfield__input" />
+                </label>
+                <label class="modal_form_formfield">
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Email"
+                    class="modal_form_formfield__input" />
+                </label>
+                <textarea
+                  name="comment"
+                  placeholder="Comment"
+                  class="modal_form_formfield__comment"></textarea>
+
+                <button type="submit" class="modal_form_button">Submit</button>
+              </form>
+            </div>
+
+            <button class="modal_close-button" data-modal-franchise-close>
+              <svg class="modal_close-button_icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 

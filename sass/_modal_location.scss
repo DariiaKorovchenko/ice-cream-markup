@@ -1,0 +1,47 @@
+@import "./utils/vars";
+
+body.modal-location-open {
+  overflow: hidden;
+}
+
+.modal.location {
+  padding: 20px;
+}
+
+.modal_location_title {
+  margin: 0 0 15px 0;
+  text-align: center;
+  font-family: $support_font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal_location_map-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 134px;
+  height: 42px;
+  padding: 14px 0;
+  background-color: $default_button_color;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  font-family: $basic_font;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: $primary_text_color;
+
+  &:hover {
+    background-color: $hover_button_color;
+  }
+
+  &:focus {
+    background-color: $hover_button_color;
+    color: $alternative_text_color;
+  }
+}

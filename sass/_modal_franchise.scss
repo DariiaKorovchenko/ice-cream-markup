@@ -1,0 +1,27 @@
+@import "./utils/vars";
+
+body.modal-franchise-open {
+  overflow: hidden;
+}
+
+.modal.franchise {
+  padding: 20px;
+}
+
+.modal_franchise_title {
+  margin: 0;
+  text-align: center;
+
+  font-family: $support_font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal_franchise_info {
+  margin: 20px 0;
+  font-family: $basic_font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}

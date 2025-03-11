@@ -1,0 +1,26 @@
+@import "../sass/utils/vars";
+
+body.modal-readmore-open {
+  overflow: hidden;
+}
+
+.modal.readmore {
+  padding: 30px 20px;
+}
+
+.modal_readmore_title {
+  margin: 0 0 20px 0;
+  font-family: $support_font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal_readmore_info {
+  margin: 20px 0 0 0;
+  font-family: $basic_font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: left;
+}
