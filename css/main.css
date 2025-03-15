@@ -211,6 +211,8 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
+  -webkit-transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms;
 }
 .modal_form_button:hover {
   background-color: #0A8817;
@@ -290,12 +292,19 @@ a {
 }
 
 .hero_links a {
-  margin-left: 20px;
+  padding: 10px 0;
+  text-align: center;
   text-decoration: underline;
-  color: #F8D24E;
+  color: #131313;
   font-size: 12px;
   font-weight: 600;
   line-height: 14.63px;
+  -webkit-transition: background-color 300ms, color 300ms, border 300ms;
+  transition: background-color 300ms, color 300ms, border 300ms;
+}
+.hero_links a:last-child {
+  color: #F8D24E;
+  margin-left: 20px;
 }
 
 .hero_links a:hover {
@@ -303,9 +312,9 @@ a {
 }
 
 .hero_button {
+  display: block;
   width: 108px;
   height: 38px;
-  color: #131313;
   background-color: transparent;
   border: 2px solid #F8D24E;
   border-radius: 10px;
@@ -450,6 +459,8 @@ a {
   font-weight: 600;
   line-height: 17.07px;
   font-size: 14px;
+  -webkit-transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms;
 }
 .buynow-button:hover {
   background-color: #0A8817;
@@ -475,6 +486,8 @@ a {
   font-size: 32px;
   text-decoration: none;
   font-weight: 700;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
 }
 .mobile-menu_link a:hover {
   color: #131313;
@@ -702,6 +715,8 @@ a {
   background-color: #F8D24E;
   border: 0 solid transparent;
   border-radius: 10px;
+  -webkit-transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms;
 }
 .about_button:hover {
   background-color: #0A8817;
@@ -789,10 +804,43 @@ a {
 
 .reviews_slider {
   display: block;
-  padding: 200px 70px 0 70px;
+  padding: 50px 0 0 0;
   margin-left: auto;
   margin-right: auto;
-  height: 450px;
+  height: 530px;
+  --swiper-pagination-bottom: 20px;
+  --swiper-pagination-color: #84a178;
+}
+
+.reviews_slider_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews_slider_text {
+  margin-top: 20px;
+  background-color: #84A178;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  height: 256px;
+  height: 280px;
+  padding: 47px 30px;
+  text-align: center;
+  color: #FCFCFC;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+}
+
+.reviews_slider_name {
+  margin: 0;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
 }
 
 .contacts {
@@ -827,7 +875,7 @@ a {
   padding: 4px 23px;
   display: inline-block;
   border-radius: 4px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -846,7 +894,7 @@ a {
 }
 
 .contacts_list-item_address {
-  color: #D6936D;
+  color: #d6936d;
   font-style: normal;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -862,7 +910,7 @@ a {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 
 .contacts_list-item_schedule {
@@ -876,7 +924,7 @@ a {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 
 .contacts_list-item_week {
@@ -895,7 +943,7 @@ a {
   font-size: 12px;
   line-height: 22.32px;
   letter-spacing: 0;
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .contacts_list-item_contacts {
@@ -923,6 +971,8 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+  -webkit-transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms;
 }
 .contacts_button-locations:hover {
   background-color: #0A8817;
@@ -945,6 +995,8 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+  -webkit-transition: border 300ms, color 300ms;
+  transition: border 300ms, color 300ms;
 }
 .contacts_button-franchise:hover {
   border: 2px solid #0A8817;
@@ -993,6 +1045,11 @@ a {
 
 .footer_network-list_item {
   margin-left: 20px;
+}
+
+.footer_network-list_item_link_image {
+  -webkit-transition: fill 300ms;
+  transition: fill 300ms;
 }
 
 .footer_network-list_item_link {
@@ -1044,7 +1101,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 21.28px;
-  color: #7A7A7A;
+  color: #7a7a7a;
   background-color: #84A178;
   position: relative;
 }
@@ -1052,7 +1109,7 @@ a {
   content: "";
   width: 100vw;
   height: 1px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   position: absolute;
   left: 0;
   top: 0;
@@ -1259,6 +1316,8 @@ body.modal-buynow-open {
   border: 2px solid #96af8c;
   border-top: 2px solid transparent;
   border-radius: 15px;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
 }
 .modal_buynow_list-item:first-child p:hover {
   background-color: #96af8c;
@@ -1270,6 +1329,8 @@ body.modal-buynow-open {
   border: 2px solid #efd478;
   border-top: 2px solid transparent;
   border-radius: 15px;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
 }
 .modal_buynow_list-item:nth-child(2n) p:hover {
   background-color: #efd478;
@@ -1281,6 +1342,8 @@ body.modal-buynow-open {
   border: 2px solid #d6936d;
   border-top: 2px solid transparent;
   border-radius: 15px;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
 }
 .modal_buynow_list-item:last-child p:hover {
   background-color: #d6936d;
@@ -1348,6 +1411,8 @@ body.modal-location-open {
   line-height: 100%;
   text-align: center;
   color: #131313;
+  -webkit-transition: background-color 300ms, color 300ms;
+  transition: background-color 300ms, color 300ms;
 }
 .modal_location_map-button:hover {
   background-color: #0A8817;

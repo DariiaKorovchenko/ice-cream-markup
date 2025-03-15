@@ -110,6 +110,7 @@ body.modal-buynow-open {
     border: 2px solid #96af8c;
     border-top: 2px solid transparent;
     border-radius: 15px;
+    transition: background-color 300ms;
 
     &:hover {
       background-color: #96af8c;
@@ -124,6 +125,7 @@ body.modal-buynow-open {
     border: 2px solid #efd478;
     border-top: 2px solid transparent;
     border-radius: 15px;
+    transition: background-color 300ms;
 
     &:hover {
       background-color: #efd478;
@@ -138,6 +140,7 @@ body.modal-buynow-open {
     border: 2px solid #d6936d;
     border-top: 2px solid transparent;
     border-radius: 15px;
+    transition: background-color 300ms;
 
     &:hover {
       background-color: #d6936d;

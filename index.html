@@ -39,7 +39,10 @@
         <div class="mobile-menu_container" data-menu>
           <div class="fixed_container">
             <img class="header_logo" src="./images/Logo.png" alt="logo" />
-            <ul class="mobile-menu_list">
+            <ul
+              class="mobile-menu_list"
+              data-menu-links-close
+              aria-expanded="false">
               <li class="mobile-menu_link">
                 <a href="./index.html">Home</a>
               </li>
@@ -121,7 +124,7 @@
         </h1>
 
         <div class="hero_links">
-          <button type="button" class="hero_button">Products</button>
+          <a href="#products" class="hero_button">Products</a>
           <a href="#about">How it's made?</a>
         </div>
         <img
@@ -372,36 +375,86 @@
 
       <section class="gallery container">
         <h1 class="gallery_title visually-hidden">Gallery</h1>
-        <div class="gallery_container">
-          <img
-            src="./images/gallery_desktop_1.png"
-            srcset="
-              ./images/gallery_desktop_1.png    1x,
-              ./images/gallery_desktop_1@2x.png 2x
-            "
-            class="gallery_image"
-            alt="gallery image of products" />
-          <!-- <img src="./images/gallery_desktop_2.png" 
-        srcset="./images/gallery_desktop_2.png 1x, ./images/gallery_desktop_2@2x.png 2x"
-        class="gallery_image"
-        alt="gallery image of products"
-        />
-        <img src="./images/gallery_desktop_3.png"
-        srcset="./images/gallery_desktop_3.png 1x, ./images/gallery_desktop_3@2x.png 2x"
-        class="gallery_image"
-        alt="gallery image of products"
-        /> -->
-        </div>
+        <swiper-container
+          class="gallery_container"
+          autoplay="true"
+          disableOnInteraction="true">
+          <swiper-slide>
+            <img
+              loading="lazy"
+              src="./images/gallery_desktop_1.png"
+              srcset="
+                ./images/gallery_desktop_1.png    1x,
+                ./images/gallery_desktop_1@2x.png 2x
+              "
+              class="gallery_image"
+              alt="gallery image of products" />
+          </swiper-slide>
+          <swiper-slide>
+            <img
+              loading="lazy"
+              src="./images/gallery_desktop_2.png"
+              srcset="
+                ./images/gallery_desktop_2.png    1x,
+                ./images/gallery_desktop_2@2x.png 2x
+              "
+              class="gallery_image"
+              alt="gallery image of products" />
+          </swiper-slide>
+          <swiper-slide>
+            <img
+              loading="lazy"
+              src="./images/gallery_desktop_3.png"
+              srcset="
+                ./images/gallery_desktop_3.png    1x,
+                ./images/gallery_desktop_3@2x.png 2x
+              "
+              class="gallery_image"
+              alt="gallery image of products" />
+          </swiper-slide>
+        </swiper-container>
       </section>
 
-      <section class="reviews">
+      <section class="reviews container">
         <h1 class="reviews_title visually-hidden">Customer Reviews</h1>
         <div class="reviews_slider">
-          <sviper-container pagination="true">
-            <sviper-slide>Slide 1</sviper-slide>
-            <sviper-slide>Slide 2</sviper-slide>
-            <sviper-slide>Slide 3</sviper-slide>
-          </sviper-container>
+          <swiper-container
+            pagination="true"
+            autoplay="true"
+            disableOnInteraction="true">
+            <swiper-slide class="reviews_slider">
+              <img
+                src="./images/reviews_photo_1.png"
+                class="reviews_slider_image" />
+              <p class="reviews_slider_text">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+              <h2 class="reviews_slider_name">Emily, Los Angeles</h2>
+            </swiper-slide>
+            <swiper-slide class="reviews_slider">
+              <img
+                src="./images/reviews_photo_2.png"
+                class="reviews_slider_image" />
+              <p class="reviews_slider_text">
+                Every day we come to you with friends after classes in college.
+                We love your ice cream and casual atmosphere!
+              </p>
+              <h2 class="reviews_slider_name">Bryan, New-York</h2>
+            </swiper-slide>
+            <swiper-slide class="reviews_slider">
+              <img
+                src="./images/reviews_photo_3.png"
+                class="reviews_slider_image" />
+              <p class="reviews_slider_text">
+                Ice cream is my passion! I love your chocolate hazelnut ice
+                cream! And I really like the excellent service - always served
+                politely and quickly!
+              </p>
+              <h2 class="reviews_slider_name">Diana, Chicago</h2>
+            </swiper-slide>
+          </swiper-container>
         </div>
       </section>
 

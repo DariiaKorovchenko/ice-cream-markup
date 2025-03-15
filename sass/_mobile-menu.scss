@@ -1,7 +1,6 @@
 @import "./utils/vars";
 
 .mobile-navigation {
-
   @media (min-width: 768px) {
     display: none;
   }
@@ -23,10 +22,9 @@
   background-color: $background_color;
   z-index: 100;
   margin-right: 15px;
-  position: fixed; 
+  position: fixed;
   top: 0;
   right: 0;
-
 
   &.is-open {
     position: static;
@@ -85,6 +83,7 @@
   font-weight: 600;
   line-height: 17.07px;
   font-size: 14px;
+  transition: background-color 300ms, color 300ms;
 
   &:hover {
     background-color: $hover_button_color;
@@ -112,6 +111,7 @@
   font-size: 32px;
   text-decoration: none;
   font-weight: 700;
+  transition: color 300ms;
 
   &:hover {
     color: $primary_text_color;

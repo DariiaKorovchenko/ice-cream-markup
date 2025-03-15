@@ -35,6 +35,7 @@ body.modal-location-open {
   line-height: 100%;
   text-align: center;
   color: $primary_text_color;
+  transition: background-color 300ms, color 300ms;
 
   &:hover {
     background-color: $hover_button_color;

@@ -1,106 +1,110 @@
 @import "./utils/vars";
 
 .footer {
-    background-color: $background_color;
-    padding-top: 400px;
+  background-color: $background_color;
+  padding-top: 400px;
 }
 
 .footer_title {
-    margin: 0;
-    font-family: $basic_font;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.94px;
-    color: $alternative_text_color;
-    text-transform: uppercase;
+  margin: 0;
+  font-family: $basic_font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: $alternative_text_color;
+  text-transform: uppercase;
 }
 
 .footer_title2 {
-    margin: 20px 0 0 0;
-    font-family: $basic_font;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 41.45px;
-    color: $alternative_text_color;
-    text-transform: uppercase;
+  margin: 20px 0 0 0;
+  font-family: $basic_font;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41.45px;
+  color: $alternative_text_color;
+  text-transform: uppercase;
 }
 
 .footer_network-list {
-    margin-top: 40px;
-    padding: 0;
-    display: flex;
-    justify-content: end;
-    width: 100%;
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }
 
 .footer_network-list_item {
-    margin-left: 20px;
-}
-
-.footer_network-list_item_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 34px;
-    width: 34px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-color: $default_button_color;
-
-    &:hover {
-        .footer_network-list_item_link_image {
-            fill: $alternative_text_color;
-        }
-    }
-
-    &:focus {
-        .footer_network-list_item_link_image {
-            fill: $alternative_text_color;
-        }
-    }
+  margin-left: 20px;
 }
 
 .footer_network-list_item_link_image {
-    fill: $background_color;
+  transition: fill 300ms;
+}
+
+.footer_network-list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: $default_button_color;
+
+  &:hover {
+    .footer_network-list_item_link_image {
+      fill: $alternative_text_color;
+    }
+  }
+
+  &:focus {
+    .footer_network-list_item_link_image {
+      fill: $alternative_text_color;
+    }
+  }
+}
+
+.footer_network-list_item_link_image {
+  fill: $background_color;
 }
 
 .footer_contact-ph {
-    margin: 15px 0 0 0;
-    padding: 0 0 30px 0;
-    font-family: $basic_font;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 22.32px;
-    color: $primary_text_color;
-    text-align: end;
+  margin: 15px 0 0 0;
+  padding: 0 0 30px 0;
+  font-family: $basic_font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22.32px;
+  color: $primary_text_color;
+  text-align: end;
 }
 
 .footer_contact-ph a {
-    color: $alternative_text_color;
+  color: $alternative_text_color;
 }
 
 .back_footer {
-    padding: 20px 0 20px 0;
-    text-align: center;
-    font-family: $basic_font;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21.28px;
-    color: #7A7A7A;
-    background-color: $background_color;
-    position: relative;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-family: $basic_font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21.28px;
+  color: #7a7a7a;
+  background-color: $background_color;
+  position: relative;
 
-    &::before {
-        content: "";
-        width: 100vw;
-        height: 1px;
-        background-color: #E1E1E1;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
 .back_footer p {
-    margin: 0;
+  margin: 0;
 }
