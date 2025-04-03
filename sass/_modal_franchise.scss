@@ -6,6 +6,11 @@ body.modal-franchise-open {
 
 .modal.franchise {
   padding: 20px;
+
+  @media (min-width: 768px) {
+    padding: 30px 50px;
+    width: 568px;
+  }
 }
 
 .modal_franchise_title {
@@ -16,6 +21,13 @@ body.modal-franchise-open {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: 768px) {
+    width: 322px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
 }
 
 .modal_franchise_info {
@@ -24,4 +36,8 @@ body.modal-franchise-open {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+
+  @media (min-width: 768px) {
+    margin: 30px 0;
+  }
 }

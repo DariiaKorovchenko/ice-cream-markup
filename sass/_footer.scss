@@ -3,6 +3,17 @@
 .footer {
   background-color: $background_color;
   padding-top: 400px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer_title-container {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .footer_title {
@@ -13,6 +24,12 @@
   line-height: 21.94px;
   color: $alternative_text_color;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 100%;
+    width: 352px;
+  }
 }
 
 .footer_title2 {
@@ -23,6 +40,26 @@
   line-height: 41.45px;
   color: $alternative_text_color;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 100%;
+  }
+}
+
+.footer_title3 {
+  margin: 20px 0 0 0;
+  font-family: $basic_font;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41.45px;
+  color: $alternative_text_color;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 100%;
+  }
 }
 
 .footer_network-list {
@@ -35,6 +72,10 @@
 
 .footer_network-list_item {
   margin-left: 20px;
+
+  @media (min-width: 768px) {
+    margin-left: 35px;
+  }
 }
 
 .footer_network-list_item_link_image {
@@ -77,6 +118,11 @@
   line-height: 22.32px;
   color: $primary_text_color;
   text-align: end;
+
+  @media (min-width: 768px) {
+    margin: 40px 0 0 0;
+    font-size: 14px;
+  }
 }
 
 .footer_contact-ph a {
@@ -94,6 +140,11 @@
   background-color: $background_color;
   position: relative;
 
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
   &::before {
     content: "";
     width: 100vw;
@@ -106,5 +157,5 @@
 }
 
 .back_footer p {
-  margin: 0;
+  margin: 0 0 0 5px;
 }

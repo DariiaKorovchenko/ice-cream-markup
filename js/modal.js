@@ -77,3 +77,19 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-tablet-buynow-open]"),
+    closeModalBtn: document.querySelector("[data-modal-tablet-buynow-close]"),
+    modal: document.querySelector("[data-modal-tablet-buynow]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-buynow-tablet-open");
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();

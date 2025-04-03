@@ -7,6 +7,10 @@
 .gallery_container {
   position: relative;
   top: -30px;
+
+  @media (min-width: 768px) {
+    top: -150px;
+  }
 }
 
 .gallery_image {

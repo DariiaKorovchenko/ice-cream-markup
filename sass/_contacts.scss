@@ -11,6 +11,10 @@
   position: relative;
   top: -345px;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .contacts_list-item {
@@ -25,6 +29,15 @@
 
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 224px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -140,6 +153,10 @@
     background-color: $hover_button_color;
     color: $alternative_text_color;
   }
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .contacts_button-franchise {
@@ -164,5 +181,20 @@
   &:focus {
     border: 2px solid $hover_button_color;
     color: $alternative_text_color;
+  }
+
+  @media (min-width: 768px) {
+    width: 196px;
+    height: 42px;
+    margin: 0 0 0 20px;
+  }
+}
+
+.contacts_buttons-container {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
   }
 }

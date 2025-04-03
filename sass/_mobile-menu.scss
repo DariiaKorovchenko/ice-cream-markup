@@ -2,6 +2,9 @@
 
 .mobile-navigation {
   @media (min-width: 768px) {
+    padding: 10px 0;
+  }
+  @media (min-width: 1200px) {
     display: none;
   }
 }
@@ -10,6 +13,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-navigation_container {
+  display: flex;
   align-items: center;
 }
 
@@ -28,6 +36,10 @@
 
   &.is-open {
     position: static;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
   }
 }
 
@@ -51,6 +63,10 @@
       background-color: $background_color;
       overflow-y: hidden;
     }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 15px;
   }
 }
 
@@ -93,6 +109,38 @@
     background-color: $hover_button_color;
     color: $alternative_text_color;
   }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.buynow-button-tablet {
+  display: block;
+  margin: 0 20px;
+  width: 152px;
+  height: 42px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: $default_button_color;
+  font-weight: 600;
+  line-height: 17.07px;
+  font-size: 14px;
+  transition: background-color 300ms, color 300ms;
+  display: none;
+
+  &:hover {
+    background-color: $hover_button_color;
+  }
+
+  &:focus {
+    background-color: $hover_button_color;
+    color: $alternative_text_color;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .mobile-menu_list {
@@ -103,6 +151,10 @@
 
 .mobile-menu_link {
   margin-top: 30px;
+
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 .mobile-menu_link a {
@@ -115,5 +167,10 @@
 
   &:hover {
     color: $primary_text_color;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 100%;
   }
 }

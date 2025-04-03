@@ -4,13 +4,24 @@
   margin-top: -100px;
   background-image: url(../images/background_mobile.jpg);
   background-size: 100vw;
-  height: 1069px;
+  padding: 0 30px 450px 30px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/backgroud_mobile@2x.jpg);
     background-size: 150vw;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(../images/background_tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background_tablet@2x.jpg);
+      background-size: 150vw;
+    }
   }
 }
 
@@ -19,9 +30,12 @@
   padding: 50px 0 0 0;
   margin-left: auto;
   margin-right: auto;
-  height: 530px;
   --swiper-pagination-bottom: 20px;
   --swiper-pagination-color: #84a178;
+
+  @media (min-width: 768px) {
+    padding: 30px 0 0 0;
+  }
 }
 
 .reviews_slider_image {
@@ -44,6 +58,11 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 255%;
+
+  @media (min-width: 768px) {
+    padding: 30px;
+    height: 138px;
+  }
 }
 
 .reviews_slider_name {
@@ -53,4 +72,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }

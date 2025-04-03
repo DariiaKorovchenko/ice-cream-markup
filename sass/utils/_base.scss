@@ -14,6 +14,8 @@ body {
 
   @media (min-width: 768px) {
     width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: 1200px) {
@@ -118,6 +120,19 @@ a {
 }
 
 // form //
+
+.modal_form {
+  @media (min-width: 768px) {
+    width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal_container {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .modal_form_formfield__input {
   width: 100%;

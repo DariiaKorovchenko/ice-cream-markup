@@ -6,6 +6,11 @@ body.modal-ingredients-open {
 
 .modal.ingredients {
   padding: 20px;
+
+  @media (min-width: 768px) {
+    padding: 30px;
+    width: 568px;
+  }
 }
 
 .modal_ingredients_title {
@@ -66,6 +71,10 @@ body.modal-ingredients-open {
   font-weight: 400;
   font-size: 14px;
   line-height: 176%;
+
+  @media (min-width: 768px) {
+    min-width: 488px;
+  }
 }
 
 .modal_ingredients_components-list_item {
