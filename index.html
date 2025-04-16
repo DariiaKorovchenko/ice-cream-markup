@@ -42,6 +42,22 @@
                   class="close-icon"></use>
               </svg>
             </button>
+            <div class="desktop_navigation">
+              <ul class="desktop_navigation_list">
+                <li class="desktop_navigation_link">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="desktop_navigation_link">
+                  <a href="#about">How it's made?</a>
+                </li>
+                <li class="desktop_navigation_link">
+                  <a href="#products">Our products</a>
+                </li>
+                <li class="desktop_navigation_link">
+                  <a href="#contacts">Contact</a>
+                </li>
+              </ul>
+            </div>
             <button
               type="button"
               class="buynow-button-tablet"
@@ -263,150 +279,155 @@
     </header>
 
     <main>
-      <section class="products container" id="products">
-        <p class="products-narrative">100% natural</p>
-        <h1>PRODUCTS</h1>
+      <section class="products" id="products">
+        <div class="container">
+          <p class="products-narrative">100% natural</p>
+          <h1>PRODUCTS</h1>
 
-        <div class="backdrop is-hidden" data-modal-ingredients>
-          <div class="modal ingredients">
-            <div class="modal_container">
-              <h3 class="modal_ingredients_title">Chololate icecream</h3>
-              <img
-                src="./images/modal_ingredients_image.png"
-                class="modal_ingredients_image"
-                alt="product image" />
-              <ul class="modal_ingredients_characteristics_list">
-                <li class="modal_ingredients_characteristics_list-item">
-                  <span class="span1">320</span>
-                  <span class="span2">kcal</span>
-                </li>
-                <li class="modal_ingredients_characteristics_list-item">
-                  <span class="span1">4g</span>
-                  <span class="span2">Prote...</span>
-                </li>
-                <li class="modal_ingredients_characteristics_list-item">
-                  <span class="span1">8,2g</span>
-                  <span class="span2">Fats</span>
-                </li>
-                <li class="modal_ingredients_characteristics_list-item">
-                  <span class="span1">40,4g</span>
-                  <span class="span2">Carbs</span>
-                </li>
-              </ul>
-              <p class="modal_ingredients_title2">Ingredients</p>
-              <ul class="modal_ingredients_components-list">
-                <li class="modal_ingredients_components-list_item">
-                  <span>Milk</span>
-                  <span>100ml</span>
-                </li>
-                <li class="modal_ingredients_components-list_item">
-                  <span>Belgian chocolate</span>
-                  <span>20g</span>
-                </li>
-                <li class="modal_ingredients_components-list_item">
-                  <span>Cream</span>
-                  <span>150 ml</span>
-                </li>
-                <li class="modal_ingredients_components-list_item">
-                  <span>Cocoa powder</span>
-                  <span>30g</span>
-                </li>
-                <li class="modal_ingredients_components-list_item">
-                  <span>Sugar</span>
-                  <span>40g</span>
-                </li>
-                <li class="modal_ingredients_components-list_item">
-                  <span>Vanilla sugar</span>
-                  <span>10g</span>
-                </li>
-              </ul>
+          <div class="backdrop is-hidden" data-modal-ingredients>
+            <div class="modal ingredients">
+              <div class="modal_container">
+                <h3 class="modal_ingredients_title">Chololate icecream</h3>
+                <img
+                  src="./images/modal_ingredients_image.png"
+                  class="modal_ingredients_image"
+                  alt="product image" />
+                <ul class="modal_ingredients_characteristics_list">
+                  <li class="modal_ingredients_characteristics_list-item">
+                    <span class="span1">320</span>
+                    <span class="span2">kcal</span>
+                  </li>
+                  <li class="modal_ingredients_characteristics_list-item">
+                    <span class="span1">4g</span>
+                    <span class="span2">Prote...</span>
+                  </li>
+                  <li class="modal_ingredients_characteristics_list-item">
+                    <span class="span1">8,2g</span>
+                    <span class="span2">Fats</span>
+                  </li>
+                  <li class="modal_ingredients_characteristics_list-item">
+                    <span class="span1">40,4g</span>
+                    <span class="span2">Carbs</span>
+                  </li>
+                </ul>
+                <p class="modal_ingredients_title2">Ingredients</p>
+                <ul class="modal_ingredients_components-list">
+                  <li class="modal_ingredients_components-list_item">
+                    <span>Milk</span>
+                    <span>100ml</span>
+                  </li>
+                  <li class="modal_ingredients_components-list_item">
+                    <span>Belgian chocolate</span>
+                    <span>20g</span>
+                  </li>
+                  <li class="modal_ingredients_components-list_item">
+                    <span>Cream</span>
+                    <span>150 ml</span>
+                  </li>
+                  <li class="modal_ingredients_components-list_item">
+                    <span>Cocoa powder</span>
+                    <span>30g</span>
+                  </li>
+                  <li class="modal_ingredients_components-list_item">
+                    <span>Sugar</span>
+                    <span>40g</span>
+                  </li>
+                  <li class="modal_ingredients_components-list_item">
+                    <span>Vanilla sugar</span>
+                    <span>10g</span>
+                  </li>
+                </ul>
 
-              <form
-                class="modal_form"
-                name="modal_form"
-                autocomplete="on"
-                js-speaker-form>
-                <label class="modal_form_formfield">
-                  <input
-                    type="text"
-                    name="username"
-                    placeholder="Name"
-                    autofocus
-                    required
-                    class="modal_form_formfield__input" />
-                </label>
-                <label class="modal_form_formfield">
-                  <input
-                    type="tel"
-                    name="telephone-number"
-                    required
-                    placeholder="Phone"
-                    class="modal_form_formfield__input" />
-                </label>
-                <textarea
-                  name="comment"
-                  placeholder="Comment"
-                  class="modal_form_formfield__comment"></textarea>
+                <form
+                  class="modal_form"
+                  name="modal_form"
+                  autocomplete="on"
+                  js-speaker-form>
+                  <label class="modal_form_formfield">
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Name"
+                      autofocus
+                      required
+                      class="modal_form_formfield__input" />
+                  </label>
+                  <label class="modal_form_formfield">
+                    <input
+                      type="tel"
+                      name="telephone-number"
+                      required
+                      placeholder="Phone"
+                      class="modal_form_formfield__input" />
+                  </label>
+                  <textarea
+                    name="comment"
+                    placeholder="Comment"
+                    class="modal_form_formfield__comment"></textarea>
 
-                <button type="submit" class="modal_form_button">Submit</button>
-              </form>
+                  <button type="submit" class="modal_form_button">
+                    Submit
+                  </button>
+                </form>
+              </div>
+
+              <button class="modal_close-button" data-modal-ingredients-close>
+                <svg class="modal_close-button_icon">
+                  <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
             </div>
-
-            <button class="modal_close-button" data-modal-ingredients-close>
-              <svg class="modal_close-button_icon">
-                <use href="./images/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
           </div>
-        </div>
 
-        <ul class="products_list">
-          <li class="products_list-item icecream">
-            <h2 class="products_list-name">ICE CREAM</h2>
-            <p>
-              Soft ice cream with a delicate taste. Made with milk, cream, sugar
-              and natural stabilizer
-            </p>
-            <button
-              type="button"
-              class="products_list-item_button"
-              data-modal-ingredients-open>
-              <svg width="40" height="16">
-                <use
-                  href="./images/sprite.svg#arrow"
-                  class="products_list-item_button-arrow"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="products_list-item icecoffee">
-            <h2 class="products_list-name">ICE COFFEE</h2>
-            <p>
-              Fragrant invigorating drink created from 100% natural ingredients
-              without the use of preservatives and flavor enhancers
-            </p>
-            <button type="button" class="products_list-item_button">
-              <svg width="40" height="16">
-                <use
-                  href="./images/sprite.svg#arrow"
-                  class="products_list-item_button-arrow"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="products_list-item milkshake">
-            <h2 class="products_list-name">MILKSHAKES</h2>
-            <p>
-              Sweet drinks based on milk and ice cream, supplemented with
-              syrups, fruits, berries and other sweets of your choice
-            </p>
-            <button type="button" class="products_list-item_button">
-              <svg width="40" height="16">
-                <use
-                  href="./images/sprite.svg#arrow"
-                  class="products_list-item_button-arrow"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
+          <ul class="products_list">
+            <li class="products_list-item icecream">
+              <h2 class="products_list-name">ICE CREAM</h2>
+              <p>
+                Soft ice cream with a delicate taste. Made with milk, cream,
+                sugar and natural stabilizer
+              </p>
+              <button
+                type="button"
+                class="products_list-item_button"
+                data-modal-ingredients-open>
+                <svg width="40" height="16">
+                  <use
+                    href="./images/sprite.svg#arrow"
+                    class="products_list-item_button-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="products_list-item icecoffee">
+              <h2 class="products_list-name">ICE COFFEE</h2>
+              <p>
+                Fragrant invigorating drink created from 100% natural
+                ingredients without the use of preservatives and flavor
+                enhancers
+              </p>
+              <button type="button" class="products_list-item_button">
+                <svg width="40" height="16">
+                  <use
+                    href="./images/sprite.svg#arrow"
+                    class="products_list-item_button-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="products_list-item milkshake">
+              <h2 class="products_list-name">MILKSHAKES</h2>
+              <p>
+                Sweet drinks based on milk and ice cream, supplemented with
+                syrups, fruits, berries and other sweets of your choice
+              </p>
+              <button type="button" class="products_list-item_button">
+                <svg width="40" height="16">
+                  <use
+                    href="./images/sprite.svg#arrow"
+                    class="products_list-item_button-arrow"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="about" id="about">
@@ -544,7 +565,7 @@
               pagination="true"
               autoplay="true"
               disableOnInteraction="true">
-              <swiper-slide class="reviews_slider">
+              <swiper-slide class="reviews_slider_item">
                 <img
                   src="./images/reviews_photo_1.png"
                   class="reviews_slider_image" />
@@ -555,7 +576,7 @@
                 </p>
                 <h2 class="reviews_slider_name">Emily, Los Angeles</h2>
               </swiper-slide>
-              <swiper-slide class="reviews_slider">
+              <swiper-slide class="reviews_slider_item">
                 <img
                   src="./images/reviews_photo_2.png"
                   class="reviews_slider_image" />
@@ -565,7 +586,7 @@
                 </p>
                 <h2 class="reviews_slider_name">Bryan, New-York</h2>
               </swiper-slide>
-              <swiper-slide class="reviews_slider">
+              <swiper-slide class="reviews_slider_item">
                 <img
                   src="./images/reviews_photo_3.png"
                   class="reviews_slider_image" />
@@ -782,61 +803,63 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer_title-container">
-          <p class="footer_title">homemade ice cream made</p>
-          <p class="footer_title2">with</p>
-          <p class="footer_title3">passion</p>
-        </div>
+        <div class="footer_container">
+          <div class="footer_title-container">
+            <p class="footer_title">homemade ice cream made</p>
+            <p class="footer_title2">with</p>
+            <p class="footer_title3">passion</p>
+          </div>
 
-        <div>
-          <ul class="footer_network-list">
-            <li class="footer_network-list_item">
-              <a
-                class="footer_network-list_item_link"
-                href="https://github.com/"
-                target="_blank"
-                aria-label="github link">
-                <svg
-                  class="footer_network-list_item_link_image"
-                  width="20"
-                  height="20">
-                  <use href="./images/sprite.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer_network-list_item">
-              <a
-                class="footer_network-list_item_link"
-                href="https://telegram.org/"
-                target="_blank"
-                aria-label="telegram link">
-                <svg
-                  class="footer_network-list_item_link_image"
-                  width="20"
-                  height="20">
-                  <use href="./images/sprite.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer_network-list_item">
-              <a
-                class="footer_network-list_item_link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                aria-label="facebook link">
-                <svg
-                  class="footer_network-list_item_link_image"
-                  width="20"
-                  height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <p class="footer_contact-ph">
-            Feel free to contact
-            <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
-          </p>
+          <div>
+            <ul class="footer_network-list">
+              <li class="footer_network-list_item">
+                <a
+                  class="footer_network-list_item_link"
+                  href="https://github.com/"
+                  target="_blank"
+                  aria-label="github link">
+                  <svg
+                    class="footer_network-list_item_link_image"
+                    width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_network-list_item">
+                <a
+                  class="footer_network-list_item_link"
+                  href="https://telegram.org/"
+                  target="_blank"
+                  aria-label="telegram link">
+                  <svg
+                    class="footer_network-list_item_link_image"
+                    width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_network-list_item">
+                <a
+                  class="footer_network-list_item_link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="facebook link">
+                  <svg
+                    class="footer_network-list_item_link_image"
+                    width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer_contact-ph">
+              Feel free to contact
+              <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

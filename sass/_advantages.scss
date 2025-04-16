@@ -7,6 +7,10 @@
   @media (min-width: 768px) {
     padding: 45px 0 200px 0;
   }
+
+  @media (min-width: 1200px) {
+    padding: 150px 0 200px 0;
+  }
 }
 
 .advantages_list {
@@ -48,6 +52,13 @@
   line-height: 43.88px;
   letter-spacing: 4;
   margin: 15px 0;
+
+  @media (min-width: 1200px) {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 4%;
+  }
 }
 
 .advantages_list-item_description {
@@ -55,6 +66,12 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 20.4px;
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 2%;
+  }
 }
 
 .advantages_list-item_description:last-child {

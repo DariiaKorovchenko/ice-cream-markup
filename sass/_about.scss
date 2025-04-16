@@ -13,6 +13,10 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .about_title {
@@ -23,6 +27,12 @@
   text-align: center;
   text-transform: uppercase;
   color: $alternative_text_color;
+
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 6%;
+  }
 }
 
 .about_narrative {
@@ -33,6 +43,13 @@
   text-align: center;
   color: $alternative_text_color;
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 4%;
+  }
 }
 
 .about_description {
@@ -61,6 +78,14 @@
       left: 20px;
       margin: 0;
     }
+
+    @media (min-width: 1200px) {
+      content: url(../images/abput_image_desktop.png);
+      margin: 0;
+      position: absolute;
+      top: 1850px;
+      left: 0;
+    }
   }
 }
 
@@ -71,11 +96,29 @@
   @media (min-width: 768px) {
     padding: 20px 30px 0 10px;
   }
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 196%;
+    letter-spacing: 4%;
+
+    padding: 0 80px 0 10px;
+  }
 }
 
 .about_description-item:first-child {
   line-height: 21.12px;
   margin-top: 30px;
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 4%;
+
+    margin-top: 150px;
+  }
 }
 
 .about_description-item:last-child {
@@ -108,5 +151,11 @@
   &:focus {
     background-color: $hover_button_color;
     color: $alternative_text_color;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: calc((100vw / 2) - 50px);
+    margin-top: 60px;
+    height: 42px;
   }
 }
